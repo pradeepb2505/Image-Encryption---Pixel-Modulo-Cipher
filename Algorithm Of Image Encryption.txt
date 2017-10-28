@@ -1,0 +1,12 @@
+  Let C1 be the color matrix of the image to be encrypted
+  Let C2 be the color matrix of the key image
+  Let C3 be the color matrix of the encrypted image
+  Let i represent the row of the pixel
+  Let j represent the column of the pixel
+  r, g, b be the respective Red, Green and Blue color values
+  of the (i,j) pixel
+  r(C3[i][j] ) = (r(C1[i][j]) + r(C2[i][j]))  % 255
+  g(C3[i][j] ) = (g(C1[i][j]) + g(C2[i][j]))  % 255
+  b(C3[i][j] ) = (b(C1[i][j]) + b(C2[i][j]))  % 255
+  The final Encrypted image can be obtained by setting the rgb values to the ith column jth row of the pixel.
+
